@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIAJÁ</title>
+    <style>
+        body {
+            font: normal 12pt Arial;
+        }
+
+        h1 {
+            background-color: rgb(0, 120, 167);
+            color: white;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Para onde gostaria de viajar hoje?</h1>
+    Escolha, <strong>Austrália</strong> ou <strong>Europa</strong>? <input type="text" name="txt1" id="txt1">
+    <input type="button" value="Enviar" onclick="clicar()">
+    <div id="resu">
+
+    </div>
+    <script>
+        function clicar() {
+            var pais = window.document.getElementById('txt1')
+            var res = window.document.getElementById('resu')
+            
+            if (pais == 'Austrália') {
+                res.innerHTML = `Lá está quente. Não esqueça o biquíni!`
+            } else {
+                res.innerHTML = `Lá está frio. Bora agasalhar!`
+            }
+        }
+    </script>
+</body>
+</html>
